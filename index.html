@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title> Crud System </title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container py-5">
+
+        <div class="mb-3">
+            <label for="productName" class="mb-1">Product Name</label>
+            <input type="text" class="form-control" id="productName">
+            <div class="invalid-feedback my-2" id="vallidNameAlert">
+                Please Enter Valid Name
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="productPrice" class="mb-1">Product Price</label>
+            <input type="number" class="form-control" id="productPrice">
+            <div class="invalid-feedback my-2" id="vallidPriceAlert">
+                Please Enter Valid Price
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="productCategory" class="mb-1">Product Category</label>
+            <input type="text" class="form-control" id="productCategory">
+        </div>
+        <div class="mb-3">
+            <label for="productDescription" class="mb-1">Product Description</label>
+            <textarea type="text" class="form-control" id="productDescription">
+                </textarea>
+        </div>
+
+
+        <button  onclick="add()"id="mybtn" class="btn btn-outline-primary">Add Product</button>
+
+
+
+        <input type="text" name="" id="search"  onkeyup="search(this.value)" class="form-control my-5 w-50 mx-auto" placeholder="Search....">
+
+        <table class="table table-striped">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDescription</th>
+                <th>update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+<!--                
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td> <button class="btn btn-warning">Update</button></td>
+                <td> <button class="btn btn-warning">Delete</button></td>
+            </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
